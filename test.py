@@ -1,11 +1,12 @@
 import streamlit as st
+import json
 
 # Title and description
-apiKey = st.text_input("ApiKey:")
-st.title("Simple Streamlit App om te testen")
-st.write("Is het ook live nadat we het private hebben gezet??")
+st.title("Simple Streamlit App")
+st.write("This is a simple app demonstrating basic Streamlit features.")
 
 # User input
+apiKey = st.text_input("ApiKey:")
 name = st.text_input("Enter your name:")
 age = st.number_input("Enter your age:", min_value=0, max_value=120, step=1)
 
@@ -23,5 +24,8 @@ st.sidebar.title("Sidebar")
 st.sidebar.write("This is the sidebar section.")
 
 # Selectbox example
-color = st.sidebar.selectbox("Choose your favorite color:", ["Red", "Blue", "Green","yellow"])
+with open ('test.json') as f:
+	test = json.load(f)
+
+color = st.sidebar.selectbox("Choose your favorite color:", test)
 st.sidebar.write(f"You selected {color}.")
