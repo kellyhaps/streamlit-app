@@ -1,7 +1,7 @@
 import streamlit as st
 
 # Title and description
-st.title("Simple Streamlit App")
+st.title("Simple Streamlit App om te testen")
 st.write("This is a simple app demonstrating basic Streamlit features.")
 
 # User input
