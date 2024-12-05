@@ -11,7 +11,7 @@ API_KEY = st.secrets["API_KEY"]
 API_KEY2 = st.secrets["Number2"]
 
 #request test
-url = "https://api.bundeling.com/V2/users??page_size=100&page=1"
+url = "https://api.bundeling.com/V2/users??page_size=5&page=1"
 headers = {"Content-Type": "application/json", "Api-Key": "6f604e7f2422421c9acf6acbd45e4c91"}
 results = requests.get(url, headers=headers)
 data = results.json()
