@@ -20,7 +20,7 @@ if st.button("Submit"):
 	name = name[:10]
 	age = int(age)+10
 	if name and age:
-		st.success(f"Hello, {name}! You are {age} years old. Your apikey; {API_KEY2}")
+		st.success(f"Hello, {name}! You are {age} years old. Your apikey; {API_KEY}")
 	else:
 		st.warning("Please fill in all the fields.")
 
