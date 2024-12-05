@@ -15,6 +15,7 @@ url = "https://api.bundeling.com/V2/users??page_size=5&page=1"
 headers = {"Content-Type": "application/json", "Api-Key": "6f604e7f2422421c9acf6acbd45e4c91"}
 results = requests.get(url, headers=headers)
 data = results.json()
+print(data)
 temp_list = data['data']
 st.write(temp_list)
 
