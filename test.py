@@ -24,7 +24,7 @@ st.sidebar.title("Sidebar")
 st.sidebar.write("This is the sidebar section.")
 
 # Selectbox example
-with open ('kellyhaps/streamlit-app/blob/main/test.json') as f:
+with open ('https://raw.githubusercontent.com/kellyhaps/streamlit-app/refs/heads/main/test.json') as f:
 	test = json.load(f)
 
 color = st.sidebar.selectbox("Choose your favorite color:", test)
