@@ -2,7 +2,7 @@ import streamlit as st
 
 # Title and description
 st.title("Simple Streamlit App om te testen")
-st.write("This is a simple app demonstrating basic Streamlit features.")
+st.write("Dit is een test om te kijken of het live is?")
 
 # User input
 name = st.text_input("Enter your name:")
