@@ -6,7 +6,7 @@ import os
 st.title("Simple Streamlit App 1.4")
 st.write("This is a simple app demonstrating basic Streamlit features.")
 API_KEY2 = os.environ["API_KEY"]
-print(API_KEY2)
+#print(API_KEY2)
 
 # User input
 apiKey = st.text_input("ApiKey:")
@@ -25,10 +25,6 @@ if st.button("Submit"):
 # Sidebar
 st.sidebar.title("Sidebar")
 st.sidebar.write("This is the sidebar section.")
-
-# Selectbox example
-#with open ('https://raw.githubusercontent.com/kellyhaps/PrivateTest/refs/heads/main/private.json?token=GHSAT0AAAAAAC3PO6UZNVOU6M55N4HEXBLQZ2RTI3Q') as f:
-#	test = json.load(f)
 
 test = ["hoi1","hoi2","hoi3"]
 
