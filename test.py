@@ -2,7 +2,7 @@ import streamlit as st
 import json
 
 # Title and description
-st.title("Simple Streamlit App 1.3")
+st.title("Simple Streamlit App 1.4")
 st.write("This is a simple app demonstrating basic Streamlit features.")
 
 # User input
