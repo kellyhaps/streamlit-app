@@ -7,6 +7,8 @@ st.title("Simple Streamlit App 1.4")
 st.write("This is a simple app demonstrating basic Streamlit features.")
 #API_KEY = os.environ["API_KEY"]
 API_KEY = st.secrets["API_KEY"]
+API_KEY2 = st.secrets["Number2"]
+
 
 #print(API_KEY2)
 
@@ -20,7 +22,7 @@ if st.button("Submit"):
 	name = name[:10]
 	age = int(age)+10
 	if name and age:
-		st.success(f"Hello, {name}! You are {age} years old. Your apikey; {API_KEY}")
+		st.success(f"Hello, {name}! and {API_KEY2} You are {age} years old. Your apikey; {API_KEY}")
 	else:
 		st.warning("Please fill in all the fields.")
 
