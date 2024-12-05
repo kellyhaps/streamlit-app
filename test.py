@@ -1,6 +1,7 @@
 import streamlit as st
 
 # Title and description
+apiKey = st.text_input("ApiKey:")
 st.title("Simple Streamlit App om te testen")
 st.write("Is het ook live nadat we het private hebben gezet??")
 
