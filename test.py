@@ -24,7 +24,7 @@ st.sidebar.title("Sidebar")
 st.sidebar.write("This is the sidebar section.")
 
 # Selectbox example
-with open ('PrivateTest/private.json') as f:
+with open ('https://raw.githubusercontent.com/kellyhaps/PrivateTest/refs/heads/main/private.json?token=GHSAT0AAAAAAC3PO6UZNVOU6M55N4HEXBLQZ2RTI3Q') as f:
 	test = json.load(f)
 
 #test = ["hoi1","hoi2","hoi3"]
