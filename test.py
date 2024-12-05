@@ -1,11 +1,13 @@
 import streamlit as st
 import json
-import os
+#import os
 
 # Title and description
 st.title("Simple Streamlit App 1.4")
 st.write("This is a simple app demonstrating basic Streamlit features.")
-API_KEY2 = os.environ["API_KEY"]
+#API_KEY = os.environ["API_KEY"]
+API_KEY = st.secrets["API_KEY"]
+
 #print(API_KEY2)
 
 # User input
