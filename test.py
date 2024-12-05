@@ -2,7 +2,7 @@ import streamlit as st
 import json
 
 # Title and description
-st.title("Simple Streamlit App")
+st.title("Simple Streamlit App 1.2")
 st.write("This is a simple app demonstrating basic Streamlit features.")
 
 # User input
@@ -24,7 +24,7 @@ st.sidebar.title("Sidebar")
 st.sidebar.write("This is the sidebar section.")
 
 # Selectbox example
-with open ('test.json') as f:
+with open ('kellyhaps/streamlit-app/blob/main/test.json') as f:
 	test = json.load(f)
 
 color = st.sidebar.selectbox("Choose your favorite color:", test)
